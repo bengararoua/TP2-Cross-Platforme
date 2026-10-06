@@ -38,15 +38,39 @@ String? surnom; // aucune valeur pour l'instant
 
   print(decrire(null));
   print(decrire('Ahmed'));
+  
+  print("Palier 3:");
+
+print(carre(5));
+  print(calculerMoyenne(12, 16));
+
+  afficherFiche(nom: 'Ahmed');
+  afficherFiche(nom: 'Sarra', classe: 'DSI3', moyenne: 15.5);
 }
 
-// TODO 5 : compléter cette fonction
+
+// TODO 1 : fonction fléchée qui renvoie le carré d'un entier
+int carre(int n) => n*n;
+
+// TODO 2 : renvoie la moyenne de deux notes (double)
+double calculerMoyenne(double n1, double n2) {
+  return (n1+n2)/2;
+}
+
+// TODO 3 : compléter la signature
+// nom : nommé et obligatoire
+// classe : nommé, valeur par défaut 'Non précisée'
+// moyenne : nommé, peut être null
+void afficherFiche({required String nom,String classe='Non précisée',double?moyenne}) {
+  // TODO 4 : afficher
+  // Nom : Ahmed | Classe : Non précisée | Moyenne : non renseignée
+  print('Nom : $nom | Classe : $classe | Moyenne : ${moyenne ?? 'non renseignée'}');
+}
+
+  // TODO 5 : compléter cette fonction
 // elle renvoie 'Bonjour X' si nom n'est pas null, sinon 'Bonjour visiteur'
-String decrire(String? nom) {
-  return 'Bonjour ${nom ?? 'visiteur'}';
-}
-
-
-
+   String decrire(String? nom) {
+   return 'Bonjour ${nom ?? 'visiteur'}';
+   }
 
 
