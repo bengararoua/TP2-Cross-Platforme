@@ -1,2 +1,1 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Avec const la valeur doit etre connu avnat l'éxécution et avec final la valeur peut étre déterminé pendant l'éxécution
